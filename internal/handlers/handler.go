@@ -1,8 +1,9 @@
 package handlers
 
 import (
-	"2025_2_PochtiVPraime/internal/services"
 	"net/http"
+
+	"github.com/go-park-mail-ru/2025_2_PochtiVPraime/internal/services"
 )
 
 // Handler — обработчик HTTP-запросов

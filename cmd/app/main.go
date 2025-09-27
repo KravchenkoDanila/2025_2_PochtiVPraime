@@ -1,8 +1,9 @@
 package main
 
 import (
-	"2025_2_PochtiVPraime/internal/handlers"
 	"net/http"
+
+	"github.com/go-park-mail-ru/2025_2_PochtiVPraime/internal/handlers"
 )
 
 func main() {
@@ -13,8 +14,7 @@ func main() {
 	http.HandleFunc("/login", h.Login)
 	http.HandleFunc("/get-boards", h.GetBoards)
 
-	// TODO: Настроить CORS только для /register, /login, /get-boards — а не для всех
-	// TODO: НУ и что нибудь ещё точно, я не прям супер знаю за cors
+	// TODO: Разобраться как и для каких ручек настроить CORS
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")

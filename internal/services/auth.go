@@ -1,7 +1,7 @@
 package services
 
 import (
-	"2025_2_PochtiVPraime/internal/models"
+	"github.com/go-park-mail-ru/2025_2_PochtiVPraime/internal/models"
 )
 
 // JWT_SECRET секрет для подписи токенов (в продакшене — из переменных окружения)

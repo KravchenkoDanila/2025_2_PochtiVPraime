@@ -1,6 +1,6 @@
 package services
 
-import "2025_2_PochtiVPraime/internal/models"
+import "github.com/go-park-mail-ru/2025_2_PochtiVPraime/internal/models"
 
 // BoardService — сервис для работы с досками
 type BoardService struct {
